@@ -64,6 +64,7 @@ nav a {
   font-size: 1.4rem;
 }
 
+
 /*El mapa aparece centrado, con marco grueso y sombras como si fuera un cuadro de cómic*/
 div {
   display: flex;
@@ -183,7 +184,7 @@ p {
 
 /* Video con marco de TV caricaturesca */
 .video-background {
-  position: relative;
+  position: center;
   width: 100%;
   max-width: 1000px;
   height: 500px;
@@ -201,7 +202,7 @@ p {
 }
 
 
-/*Reset básico*/
+/*Reset básico info*/
 * {
   margin: 0;
   padding: 0;
@@ -304,4 +305,25 @@ div h1 {
     text-align: center;
   }
 }
+
+.boton-atras li {
+  list-style: none;
+}
+
+.boton-atras a {
+  display: inline-block;
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+.boton-atras a:hover {
+  background-color: #1abc9c;
+}
+
 
