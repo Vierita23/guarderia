@@ -1,0 +1,307 @@
+/*Nos asegura que los elementos empiecen sin margen ni relleno*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Fondo de rayas de colores*/
+body {
+  background: repeating-linear-gradient(
+    45deg,
+    #ffef99,
+    #ffef99 20px,
+    #4ff502 20px,
+    #eeff00 40px
+  );
+  font-family: 'Luckiest Guy', cursive;
+  color: #222;
+  padding-bottom: 50px;
+}
+
+/*Fondo del Título*/
+header {
+  background-color: #ff5252;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 8px dashed #000;
+  box-shadow: 0 8px 0 #000;
+}
+/*Al pasar el mouse se agrandan y giran un poco dando dinamismo*/
+header h1 {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 3px 3px 0 #000;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+nav li {
+  background-color: #00e5ff;
+  border: 3px solid #000;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: transform 0.3s ease;
+  box-shadow: 4px 4px 0 #000;
+}
+
+nav li:hover {
+  transform: rotate(-3deg) scale(1.1);
+  background-color: #18ffff;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4rem;
+}
+
+/*El mapa aparece centrado, con marco grueso y sombras como si fuera un cuadro de cómic*/
+div {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+iframe {
+  border: 6px solid #000;
+  border-radius: 10px;
+  box-shadow: 8px 8px 0 #000;
+  max-width: 90%;
+}
+
+/*Ajusta el tamaña adecuado para diferentes pantallas*/
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  iframe {
+    height: 300px;
+  }
+}
+/*CJ7 se mueve de izquierda a derecha y vuelva en la pantalla con una animación*/
+@keyframes volarKintoun {
+  0% {
+    left: -150px;
+    top: 100px;
+  }
+  25% {
+    left: 50px;
+    top: 120px;
+  }
+  50% {
+    left: 150px;
+    top: 80px;
+  }
+  75% {
+    left: 200px;
+    top: 120px;
+  }
+  100% {
+    left: 110%;
+    top: 100px;
+  }
+}
+
+.nube-voladora {
+  background: url('https://assets.stickpng.com/thumbs/5cc1780ce7eba1088f142835.png' ) no-repeat;
+  background-size: contain;
+  width: 120px;
+  height: 80px;
+  position: absolute;
+  top: 100px;
+  left: -150px;
+  animation: volarKintoun 5s cubic-bezier(0.25, 0.75, 0.5, 1.25) infinite; /* Efecto elástico */
+  z-index: 2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/*Título principal como portada de cómic*/
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #eeff00;
+  text-shadow: 3px 3px 0 #000;
+  margin-bottom: 40px;
+}
+
+/*Artículo con marco de cómic*/
+article {
+  background-color: #ffffff;
+  border: 8px solid #7252ff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 6px 6px 0 #000;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  transition: transform 0.3s ease;
+}
+
+article:hover {
+  transform: rotate(-1deg) scale(1.02);
+}
+
+/*Subtítulo estilo viñeta*/
+h2 {
+  color: #fb1b89;
+  text-shadow: 2px 2px 0 #000;
+  margin-bottom: 15px;
+}
+
+/*Texto con burbuja suave*/
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  background-color: #ffeef7;
+  border-left: 10px solid #fb1b89;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Video con marco de TV caricaturesca */
+.video-background {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: 500px;
+  margin: 30px auto;
+  border: 8px solid #fb1b89;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 #000;
+  overflow: hidden;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/*Reset básico*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Fondo selvático estilo caricatura*/
+body {
+  background: repeating-linear-gradient(
+    45deg,
+    #b5f58b,
+    #b5f58b 20px,
+    #d9e444 20px,
+    #d8e247 40px
+  );
+  font-family: 'Luckiest Guy', cursive;
+  color: #1b3c1b;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+/*Título estilo parque jurásico*/
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: #2a5e2a;
+  text-shadow: 3px 3px 0 #000;
+  margin-bottom: 40px;
+}
+
+/*Sección como cartel selvático*/
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #d4fcb2;
+  border: 8px dashed #2a5e2a;
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 8px 8px 0 #000;
+}
+
+/*Contenedor flexible para imagen y el texto*/
+section > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+/*Imagen con estilo tablón de selva*/
+img {
+  border: 8px solid #2a5e2a;
+  border-radius: 20px;
+  box-shadow: 6px 6px 0 #000;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05) rotate(-2deg);
+}
+
+/*Texto en bloque tipo cartel de parque*/
+p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  background-color: #ebffdd;
+  border-left: 10px solid #2a5e2a;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 #1b3c1b;
+  flex: 1;
+  min-width: 300px;
+}
+
+/*Subtítulos internos*/
+div h1 {
+  font-size: 3rem;
+  color: #165016;
+  text-shadow: 2px 2px #000;
+  margin: 20px 0;
+}
+
+/*Hace que las secciones salváticas se adapten en diferentes pantallas*/
+@media (max-width: 900px) {
+  section > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    max-width: 90%;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
