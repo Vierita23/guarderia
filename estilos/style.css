@@ -27,6 +27,7 @@ header {
   border-bottom: 8px dashed #000;
   box-shadow: 0 8px 0 #000;
 }
+
 /*Al pasar el mouse se agrandan y giran un poco dando dinamismo*/
 header h1 {
   font-size: 4rem;
@@ -64,7 +65,6 @@ nav a {
   font-size: 1.4rem;
 }
 
-
 /*El mapa aparece centrado, con marco grueso y sombras como si fuera un cuadro de cómic*/
 div {
   display: flex;
@@ -96,6 +96,7 @@ iframe {
     height: 300px;
   }
 }
+
 /*CJ7 se mueve de izquierda a derecha y vuelva en la pantalla con una animación*/
 @keyframes volarKintoun {
   0% {
@@ -131,14 +132,6 @@ iframe {
   animation: volarKintoun 5s cubic-bezier(0.25, 0.75, 0.5, 1.25) infinite; /* Efecto elástico */
   z-index: 2;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 
 /*Título principal como portada de cómic*/
 h1 {
@@ -199,14 +192,6 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-
-/*Reset básico info*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /*Fondo selvático estilo caricatura*/
@@ -306,13 +291,40 @@ div h1 {
   }
 }
 
-.boton-atras li {
+/* Estilos responsivos adicionales para móviles */
+@media (max-width: 480px) {
+  .nube-voladora {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  section > div {
+    gap: 20px;
+  }
+
+  .video-background {
+    height: 250px;
+  }
+}
+
+.boton-atras li {       
   list-style: none;
 }
 
 .boton-atras a {
   display: inline-block;
-  background-color: #2c3e50;
+  background-color: #0255a3;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -325,5 +337,3 @@ div h1 {
 .boton-atras a:hover {
   background-color: #1abc9c;
 }
-
-
